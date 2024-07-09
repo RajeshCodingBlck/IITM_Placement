@@ -30,9 +30,7 @@ public class countPalidromic {
        
           int overallCount=0;
       for(int st=0; st<str.length();st++) {
-    	
     	  for(int ed= st; ed<str.length();ed++) {
-    		  
     		  String substring= str.substring(st, ed+1);
     		  
     		  if(check(substring)==true) {
