@@ -12,7 +12,6 @@ public class Permutation {
 		for(int i=0; i<str.length();i++) {
 
 			char ch= str.charAt(i);
-			
 			String remaining_left= str.substring(0, i);
 			String remaining_right= str.substring(i+1);
 			String chhota_str= remaining_left+ remaining_right;
