@@ -3,10 +3,10 @@ package StackPackage;
 public class MyStack {
 
      // State
-	private int [] arr;    //Every Stack has a Array (Composite Has a relation)
-	private int top;      // Represent Index of Top Element
+	protected int [] arr;    //Every Stack has a Array (Composite Has a relation)
+	protected int top;      // Represent Index of Top Element
 	 
-	 MyStack(int size){
+	public MyStack(int size){
 		 arr= new int[size];
 		 top=-1;
 	 }
@@ -76,5 +76,4 @@ public class MyStack {
 		 return ans;
 	 }
 	 
-
 }
