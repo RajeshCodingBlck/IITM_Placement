@@ -26,6 +26,7 @@ public class reverse_linkedlist_usingIterativefunction {
 		list.InsertAtEnd(50);
 		list.InsertAtEnd(60);
 		list.Display();
+		
 		//reverse the linked list.....
 		Node newHead=reverse(list.head);
 		
