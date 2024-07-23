@@ -20,6 +20,7 @@ public class MyLinkedList {
 			System.out.print(temp.data + " -> ");
 			temp=temp.next;
 		}
+		System.out.println();
 	}
 	
 	public void InsertAtEnd(int val) {
@@ -39,6 +40,68 @@ public class MyLinkedList {
 		Node newNode= new Node(val);
 		
 		temp.next=newNode;
+	}
+	
+	public void removeAtBegin() throws Exception{
+		
+		// Hamara LinkedList is Empty
+		if(head==null) {
+			throw new Exception("LinkedList is Empty");
+		}
+		
+		Node temp=head;
+		head=head.next;
+		temp.next=null;
+	}
+	
+	public void removeAtEnd() {
+		
+		if(head==null) {
+			// throw Exception 
+		}
+		
+		if(head.next==null) {
+			head=null;
+			return;
+		}
+		
+		Node temp=head;
+		while(temp.next.next !=null) {
+			temp=temp.next;
+		}
+		
+		temp.next=null;
+		
+		
+	}
+	public void InsertAtBetween(int val, int index) {
+		
+		int jump=index-1;
+		Node temp= head;
+		
+		while(jump>0) {
+			temp=temp.next;
+			jump--;
+		}
+		Node newNode= new Node(val);
+		
+		Node temp2= temp.next;
+		newNode.next=temp2;
+		temp.next=newNode;
+	}
+	public void removeAtBetween(int index) {
+		
+		int jump=index-1;
+		Node temp= head;
+		
+		while(jump>0) {
+			temp=temp.next;
+			jump--;
+		}
+		
+		Node temp2= temp.next;
+		temp.next= temp.next.next;
+		temp2.next=null;
 		
 		
 	}
