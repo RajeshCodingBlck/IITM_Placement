@@ -44,6 +44,7 @@ public static boolean hasCycle(Node head) {
 		list.InsertAtEnd(50);
 		list.InsertAtEnd(60);
 		list.Display();
+		
 		//calling the hasCycle function to detect cycle is present or not?
 		boolean isCycle=hasCycle(list.head);
 		System.out.println(isCycle);
