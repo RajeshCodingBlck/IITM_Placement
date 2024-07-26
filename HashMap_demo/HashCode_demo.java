@@ -27,5 +27,4 @@ public class HashCode_demo {
 		System.out.println(hashFunction(str2));
 		
 	}
-
 }
